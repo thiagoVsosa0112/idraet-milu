@@ -3,32 +3,42 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
 }
 
 .background{
-    background-image:url('../assets/images/background-image.jpg');
+    background: #ffffff url(https://t-place.jp/wp-content/uploads/2020/04/AdobeStock_317095763.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     
 }
 
-.navbar{
+
+.navbar{    
+    margin-top: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .item-nav{
+    box-shadow: 0 0 5px  #ffb7b8, 0 0 25px  #ffb7b8;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: #ffb7b8;
     padding: 2px 15px;
     letter-spacing: 1px;
     font-weight: 500;
     font-size: larger;
 }
 
+
+.item-nav:hover{
+    box-shadow: 0 0 5px #cf95e9, 0 0 25px #cf95e9, 0 0 50px #cf95e9, 0 0 100px #cf95e9, 0 0 200px  #cf95e9;
+}
+
 a{
+    text-decoration: none;
     color: black;
 }
 

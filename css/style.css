@@ -6,7 +6,7 @@
 }
 
 .background{
-    background: #ffffff url(https://t-place.jp/wp-content/uploads/2020/04/AdobeStock_317095763.jpeg);
+    background: #ffffff url(../assets/images/background.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }

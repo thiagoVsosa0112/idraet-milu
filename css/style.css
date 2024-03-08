@@ -116,4 +116,43 @@ h1:after{
     box-shadow: 0 0 5px #cf95e9, 0 0 25px #cf95e9, 0 0 50px #cf95e9, 0 0 100px #cf95e9, 0 0 200px  #cf95e9;
 }
 
+.card{
+    padding: 3rem;
+    text-align: center; 
+    position: relative;
+    background-color: #faf9f9;
+    box-shadow:  1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+    outline: 2px solid #faf9f9;
+    
+}
 
+.card img{
+    width: 70%;
+    margin-bottom: 3px;
+}
+.card-text{
+    text-align: start;
+}
+.card-text h6{
+    font-weight: 800;
+    font-size: 13px;
+    color: #f2777c;
+}
+
+.card-text h2{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+.card-text h5{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.card-text .precio{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    color:#ad5160;
+}

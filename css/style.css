@@ -73,7 +73,8 @@ h1:after{
 }
 .categoria{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 18%;
 }
 
@@ -125,7 +126,7 @@ h1:after{
     border-radius: 0.5rem;
     outline: 2px solid #faf9f9;
     width: 16rem;
-    height: 90vh;
+    height: 100%;
 }
 
 .card img{
@@ -303,19 +304,27 @@ btn:hover{
     .container-products{
         display: flex;
         flex-direction: column;
+        column-gap: 50px;
     }
-    .nav-p{
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-        align-items: center;
-        
-    }
+  
  
     .products-cards{
         width: 100%;
         justify-content: center;
         align-items: center;
+    }
+ 
+    .categoria{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .submenu{
+        list-style: none;
+        background-color: #ffb7b8;
+        width: 100%;
+        
+        gap: 20px;
     }
 
 }

@@ -30,13 +30,24 @@
     <section class="products">
       <h1>Productos</h1>
       <div class="container-products">
-        <div class="categoria">
-          <a href="#" class="category-item" category="all">Todo</a>
+       <!--  <div class="categoria nav-p"> -->
+          <!-- <a href="#" class="category-item" category="all">Todo</a>
           <a href="#" class="category-item" category="skincare">Skincare</a>
-          <a href="#" class="category-item" category="maquillaje">Maquillaje</a>
+          <a href="#" class="category-item" category="maquillaje">Maquillaje</a> -->
+          <ul class="submenu">
+            <li><a href="#" class="category-item"  category="all">Todo</a></li>
+            <li>
+              <a href="#">Skincare</a>
+              <ul class="dropdown">
+                <li><a href="#" class="category-item" category="limpieza">Limpieza facial</a></li>
+                <li><a href="#">Serums</a></li>
+                <li><a href="#">Crema hidratante</a></li>
+              </ul>
+            </li>
+            <li><a href="#"  class="category-item"  category="maquillaje">Maquillaje</a></li>
+          </ul>
         </div>
         <div class="products-cards">
-
           <!-- Maquillaje -->
 
           <div class="card"  category="maquillaje">
@@ -51,8 +62,8 @@
 
           <!-- Skincare -->
 
-          <div class="card"  category="skincare">
-            <img src="./assets/images/puryfying-gel-cleanser.jpeg" alt="">
+          <div class="card"  category="limpieza">
+            <img src="./assets/images/purifying-Gel-Cleanser.png" alt="">
             <div class="card-text">
               <h6>Producto Skincare</h6>
               <h3>Gel de limpieza - 100ml</h3>
@@ -119,14 +130,85 @@
               <h4 class="precio">$15530</h4>
             </div>
           </div>
+          <div class="card" category="skincare">
+            <img src="./assets/images/plump-filler-skin.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Serum Ultra Hidratante</h3>
+              <p>Sérum de ácido hialurónico, contiene principios activos que protegen a las células de la piel frente a los agentes externos. Deja una piel suave, elástica y radiante</p>
+              <h4 class="precio">$17090</h4>
+            </div>
+          </div>
+          <div class="card" category="skincare">
+            <img src="./assets/images/perfect-glow-skin.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Serum Iluminador Anti-Age</h3>
+              <p>Serum nutritivo, hidratante 
+                y revitalizante. Fórmula enriquecida con Vitamina C, extracto de cacao y frutos rojos, colágeno, aceite de damasco 
+                y jojoba, aporta luminosidad natural. </p>
+              <h4 class="precio">$17450</h4>
+            </div>
+          </div>
+
+          <div class="card" category="skincare">
+            <img src="./assets/images/emulsion-caviar.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Emulsión Hidratante - Caviar 30gr</h3>
+              <p>Fórmula antiage enriquecida con extracto de caviar y colágeno. Hidrata, regenera 
+                y proporciona firmeza a la piel. Suaviza líneas de expresión y aporta elasticidad dejando la piel suave y luminosa. </p>
+              <h4 class="precio">$12620</h4>
+            </div>
+          </div>
           
+          <div class="card" category="skincare">
+            <img src="./assets/images/emulsion-contorno.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Emulsión Contorno de Ojos - 15gr</h3>
+              <p>Emulsión Antiage Hidratante. Con extracto de Caviar, Aceite de Palta y Damasco. Suaviza el perímetro de los ojos, estimula la síntesis de colágeno y ayuda a disminuir líneas de expresión</p>
+              <h4 class="precio">$13060</h4>
+            </div>
+          </div>
+
+          <div class="card" category="skincare">
+            <img src="./assets/images/anti-Age-Highlight.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Tinte Hdratante con Extracto de Caviar - 15gr</h3>
+              <p>Emulsión anti-age revitalizante de hidratación profunda para el contorno de ojos. Aporta una mínima cobertura para iluminar y suavizar la zona tratada.</p>
+              <h4 class="precio">$14680</h4>
+            </div>
+          </div>
+
+
+          <div class="card" category="skincare">
+            <img src="./assets/images/anti-Age-Hydrating.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Emulsión hidratante Antiage - 30gr</h3>
+              <p>Emulsión hidratante y anti-age de cobertura liviana con 
+                Blue Light Tech que unifica y perfecciona el tono de tu piel.</p>
+              <h4 class="precio">$17240</h4>
+            </div>
+          </div>
+
+          <div class="card" category="skincare">
+            <img src="./assets/images/bb-cream.jpeg"  alt="">
+            <div class="card-text">
+              <h6>Productos skincare</h6>
+              <h3>Crema Corporal Hidratante - 100gr</h3>
+              <p>Formulada con activos que nutren, hidratan y revitalizan la piel. Contiene una alta concentración de partículas que dejan un acabado de efecto luminoso en la piel. Con Vitamina C, Cacao y Frutos rojos</p>
+              <h4 class="precio">$12030</h4>
+            </div>
+          </div>
 
 
 
 
         </div>
         </div>
-
       </div>
     </section>
   </main>

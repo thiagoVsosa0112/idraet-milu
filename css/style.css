@@ -77,7 +77,7 @@ h1:after{
     width: 18%;
 }
 
-.category-item {
+/* .category-item {
     display: block;
     width: 90%;
     padding: 15px 0;
@@ -88,7 +88,7 @@ h1:after{
     text-align: center;
     
     border-radius: 15px;
-}
+} */
 .container-products{
     display: flex;
 }
@@ -96,9 +96,12 @@ h1:after{
 /*PRODUCTOS*/
 
 .products-cards{
-    width: 82%;
+    margin-top: 50px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
     max-height: 100%;
 }
@@ -122,7 +125,7 @@ h1:after{
     border-radius: 0.5rem;
     outline: 2px solid #faf9f9;
     width: 16rem;
-    height: 80vh;
+    height: 90vh;
 }
 
 .card img{
@@ -234,6 +237,49 @@ btn:hover{
     background-color: #3e2c57;
 }
 
+
+.submenu{
+    list-style: none;
+    background-color: #ffb7b8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.submenu li{
+    display: inline-block;
+    position: relative;
+}
+.submenu li a{
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown{
+    width: 100%;
+    background: #cf95e9;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.dropdown li{
+    display: block;
+}
+.submenu li a:hover{
+    background-color: #cf95e9;
+}
+
+.submenu li:hover ul{
+    display: block;
+}
+
+
 @media(max-width: 991px) {
     
     body{
@@ -245,5 +291,31 @@ btn:hover{
     }
 
 
+
+}
+
+@media(max-width: 991px) {
+
+    .products{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-products{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-p{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        
+    }
+ 
+    .products-cards{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 
 }

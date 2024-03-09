@@ -14,27 +14,73 @@
 
 
 .navbar{    
-    margin-top: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 40px;
+    background-color: #ffb7b8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+
 }
 
 .item-nav{
-    box-shadow: 0 0 5px  #ffb7b8, 0 0 25px  #ffb7b8;
+   /*  box-shadow: 0 0 5px  #ffb7b8, 0 0 25px  #ffb7b8;
     border-radius: 20px;
-    background-color: #ffb7b8;
     padding: 2px 15px;
     letter-spacing: 1px;
     font-weight: 500;
-    font-size: larger;
+    font-size: larger; */
+    padding-left: 30px;
+}
+
+.item-nav a{
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.item-nav a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #ff8de2;
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav a:hover::after{
+    width: 100%;
 }
 
 
-.item-nav:hover{
+.open-menu, .close-menu{
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #3e2c57;
+    visibility: hidden;
+}
+.open-menu{
+    top:50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top:20px;
+    right: 20px;
+}
+#check{
+    display: none;
+}
+/* .item-nav:hover{
     box-shadow: 0 0 5px #cf95e9, 0 0 25px #cf95e9, 0 0 50px #cf95e9, 0 0 100px #cf95e9, 0 0 200px  #cf95e9;
-}
+} */
 
 a{
     text-decoration: none;
@@ -296,6 +342,46 @@ btn:hover{
 }
 
 @media(max-width: 991px) {
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #cf95e9;
+        transition: all 0.2s ease-in-out;
+    }
+
+.navbar li{
+    margin-top: 40px;
+}
+.navbar li a{
+    padding: 10px;
+}
+.open-menu{
+    top: 0;
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+.open-menu svg{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.open-menu, .close-menu{
+    display: block;
+    visibility: visible;
+}
+#check:checked ~ .navbar{
+    right: 0;
+}
 
     .products{
         display: flex;
